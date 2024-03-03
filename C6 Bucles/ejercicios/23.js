@@ -3,6 +3,15 @@ function doWhile(num) {
   // Retorna el valor final.
   // PISTA: Utiliza el bucle do-while.
   // Tu código:
+  var limite = 8;
+  var contador = 0;
+
+  do {
+      num += 5;
+      contador++;
+  } while (contador < limite);
+
+  return num;
 }
 
 module.exports = doWhile;
