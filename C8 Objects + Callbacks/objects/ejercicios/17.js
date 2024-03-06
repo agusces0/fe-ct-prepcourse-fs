@@ -3,6 +3,10 @@ function actualizarPassword(objetoUsuario, nuevaPassword) {
   // La nueva contraseña la recibes por parámetro.
   // Retornar el objeto.
   // Tu código:
+  if (typeof nuevaPassword === 'string'){
+    objetoUsuario.password = nuevaPassword;
+  }
+  return objetoUsuario;
 }
 
 module.exports = actualizarPassword;
